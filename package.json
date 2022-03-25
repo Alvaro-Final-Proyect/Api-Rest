@@ -2,22 +2,12 @@
   "name": "api-rest",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "npx nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Alvaro-Final-Proyect/Api-Rest.git"
+    "start": "npx nodemon ./bin/www"
   },
   "author": "Alvaro",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Alvaro-Final-Proyect/Api-Rest/issues"
-  },
-  "homepage": "https://github.com/Alvaro-Final-Proyect/Api-Rest#readme",
   "dependencies": {
+    "express": "^4.17.3",
     "nodemon": "^2.0.15"
   }
 }
