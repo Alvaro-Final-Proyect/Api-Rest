@@ -1,0 +1,14 @@
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+    "username": "alvaro-martinez",
+    "email": "alvaro@martinez.es",
+    "password": "alvaro",
+    "name": "Alvaro",
+    "surname": "Martinez",
+    "gender": "male",
+    "level": 2,
+    "friends": [],
+    "friendsRequest": []
+}
