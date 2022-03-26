@@ -1,3 +1,7 @@
+GET http://localhost:8080/api/users/623f2406e69b47de0d9538a5
+
+###
+
 POST http://localhost:8080/api/users
 Content-Type: application/json
 
@@ -11,4 +15,17 @@ Content-Type: application/json
     "level": 2,
     "friends": [],
     "friendsRequest": []
+}
+
+###
+
+DELETE  http://localhost:8080/api/users/623f2406e69b47de0d9538a5
+
+### 
+
+PATCH http://localhost:8080/api/users/623f2406e69b47de0d9538a5
+Content-Type: application/json
+
+{
+    "password": "1234"
 }

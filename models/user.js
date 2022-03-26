@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const ObjectId = mongoose.Schema.Types.ObjectId;
 
 const options = { toJson: { virtuals: true} };
-const regEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
+const emailRegEx = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/
 
 const userSchema = new mongoose.Schema({
     _id: { 
@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
         required: 'Email is required', 
         unique: true, 
         trime: true,
-        validate: value => regEx.test(value)
+        validate: value => emailRegEx.test(value)
     },
     name: {
         type: String,
