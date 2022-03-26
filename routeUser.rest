@@ -1,13 +1,14 @@
 GET http://localhost:8080/api/users/623f2406e69b47de0d9538a5
-
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjNmMjQwNmU2OWI0N2RlMGQ5NTM4YTUiLCJpYXQiOjE2NDgzMzAyNDQsImV4cCI6MTY0ODM3MzQ0NH0._5N2py2SxMj6zR9i_Pex1NpvtFsD4yJn-SXrMq7k_kM
 ###
 
 POST http://localhost:8080/api/users
 Content-Type: application/json
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjNmMjQwNmU2OWI0N2RlMGQ5NTM4YTUiLCJpYXQiOjE2NDgzMzAyNDQsImV4cCI6MTY0ODM3MzQ0NH0._5N2py2SxMj6zR9i_Pex1NpvtFsD4yJn-SXrMq7k_kM
 
 {
-    "username": "alvaro-martinez",
-    "email": "alvaro@martinez.es",
+    "username": "alvaro-g2",
+    "email": "alvaro@tinez.es",
     "password": "alvaro",
     "name": "Alvaro",
     "surname": "Martinez",
