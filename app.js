@@ -5,12 +5,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // routers
+const auth = require('./middlewares/auth');
 const login = require('./routes/login');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./components/users');
 
 app.use('/', indexRouter);
 app.use('/login', login);
+
+app.use(auth);
 
 app.use('/api/users', usersRouter);
 

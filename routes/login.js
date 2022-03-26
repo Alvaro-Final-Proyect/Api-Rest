@@ -1,5 +1,6 @@
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
+const services = require('../services');
 
 const login = (request, response) => {
     const username = request.body.username;
@@ -19,8 +20,10 @@ const login = (request, response) => {
             if(!await bcrypt.compare(request.body.password, user.password)){
                 return res.status(401).json({ message: 'Invalid password' });
             }
+
             response.status(200).send({
-                message: `You logged in correctly, welcome ${user.name}`
+                message: `You logged in correctly, welcome ${user.name}`,
+                token: services.createToken(user)
             });
         }
     );
