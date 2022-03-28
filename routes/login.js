@@ -18,7 +18,7 @@ const login = (request, response) => {
             if(!user) return response.status(404).send({ message: 'User not found' });
             request.user = user;
             if(!await bcrypt.compare(request.body.password, user.password)){
-                return res.status(401).json({ message: 'Invalid password' });
+                return response.status(401).json({ message: 'Invalid password' });
             }
 
             response.status(200).send({
