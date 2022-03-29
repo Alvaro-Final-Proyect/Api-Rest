@@ -1,0 +1,32 @@
+GET http://localhost:8080/api/users/623f2406e69b47de0d9538a5
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjNmODY1ZDkyYzZjOGQ4MmQxNTYzMjQiLCJpYXQiOjE2NDg0MTQxNzMsImV4cCI6MTY0ODQ1NzM3M30.NslI_PNBsColI6nnbmEoY3i2UTgjFr6J7YGBr62UBjg
+###
+
+POST http://localhost:8080/api/users
+Content-Type: application/json
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjNmODY1ZDkyYzZjOGQ4MmQxNTYzMjQiLCJpYXQiOjE2NDg0MTQxNzMsImV4cCI6MTY0ODQ1NzM3M30.NslI_PNBsColI6nnbmEoY3i2UTgjFr6J7YGBr62UBjg
+
+{
+    "username": "alvaro",
+    "email": "alvaro@alvaro.es",
+    "password": "12345",
+    "name": "Alvaro",
+    "surname": "Martinez",
+    "gender": "male",
+    "level": 2,
+    "friends": [],
+    "friendsRequest": []
+}
+
+###
+
+DELETE  http://localhost:8080/api/users/623f2406e69b47de0d9538a5
+
+### 
+
+PATCH http://localhost:8080/api/users/623f2406e69b47de0d9538a5
+Content-Type: application/json
+
+{
+    "password": "1234"
+}
