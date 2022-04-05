@@ -2,8 +2,6 @@ const jwt = require('jwt-simple');
 const moment = require('moment');
 
 function createToken(user) {
-    console.log(user._id.toString());
-
     const payload = {
         sub: user._id.toString(),
         iat: moment().unix(),
