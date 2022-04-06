@@ -1,18 +1,21 @@
+
 const User = require('../../../models/user');
 
-const getUser = async (request, response, next) => {
+const getUserFromToken = async (request, response) => {
     let user;
+
     try{
-        user = await User.findById(request.params.id);
+        user = await User.findById(request.userId);
         if(!user){
             return response.status(404).json({ message: 'Cannot find user.' });
         }
-    }catch (error) {
+    }catch(error){
         return response.status(500).json({ message: error.message });
     }
 
     response.user = user;
-    next();
+    response.user.password = "";
+    response.json(response.user);
 }
 
-module.exports = getUser;
+module.exports = getUserFromToken;

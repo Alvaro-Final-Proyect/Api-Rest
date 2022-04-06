@@ -22,7 +22,7 @@ function decodeToken(token) {
                     message: 'The token has expired!'
                 });
             }
-
+            
             resolve(payload.sub);
         }catch(error){
             reject({
