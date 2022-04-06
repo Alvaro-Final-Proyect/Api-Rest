@@ -53,12 +53,10 @@ const userSchema = new mongoose.Schema({
     ],
     friendsRequests: [
         {
-            type: String,
+            type: ObjectId,
             ref: 'User'
         }
     ]
 }, options);
-
-userSchema.virtual('id').get(() => this._id);
 
 module.exports = mongoose.model('User', userSchema);
