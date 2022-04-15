@@ -1,5 +1,5 @@
-GET http://localhost:8080/api/users/623f2406e69b47de0d9538a5
-authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjQwZDMxNzBiNzVjMzczNzA4YzQ0Y2EiLCJpYXQiOjE2NDkyNzQ5NzcsImV4cCI6MTY0OTMxODE3N30.Xrq_hUeAKQJSm9fALXLbNDkLiWugAvFvLCzihyZldSs
+GET http://localhost:8080/api/users
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjQwZDMxNzBiNzVjMzczNzA4YzQ0Y2EiLCJpYXQiOjE2NDk5NzE5NjksImV4cCI6MTY1MTI2Nzk2OX0.C6iaS-a_GOnVCPFdyD9D7oaT-WPNdNdCkDOxqyYPA-Y
 ###
 
 POST http://localhost:8080/api/users
