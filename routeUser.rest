@@ -1,5 +1,5 @@
-GET http://localhost:8080/api/users
-authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjQwZDMxNzBiNzVjMzczNzA4YzQ0Y2EiLCJpYXQiOjE2NDk5NzE5NjksImV4cCI6MTY1MTI2Nzk2OX0.C6iaS-a_GOnVCPFdyD9D7oaT-WPNdNdCkDOxqyYPA-Y
+GET http://localhost:8080/api/users/
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUzYWE1MjBlZjVmYWY5ZDAzMjIiLCJpYXQiOjE2NTAwMjk4ODksImV4cCI6MTY1MTMyNTg4OX0.1iynYvQ5RMzvXhvo7pgCtCu4QRNPA2WrGDy8XFSvs4k
 ###
 
 POST http://localhost:8080/api/users
@@ -24,17 +24,26 @@ DELETE  http://localhost:8080/api/users/623f2406e69b47de0d9538a5
 
 ### 
 
-PATCH http://localhost:8080/api/users/623f2406e69b47de0d9538a5
+PATCH http://localhost:8080/api/users/62597515a520ef5faf9d031f
 Content-Type: application/json
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUzYWE1MjBlZjVmYWY5ZDAzMjIiLCJpYXQiOjE2NTAwMjk4ODksImV4cCI6MTY1MTMyNTg4OX0.1iynYvQ5RMzvXhvo7pgCtCu4QRNPA2WrGDy8XFSvs4k
 
 {
-    "password": "1234"
+    "position": "right"
 }
 
 ###
 
 GET http://localhost:8080/api/users/getUserFromToken
 Content-Type: application/json
-authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjQwZDMxNzBiNzVjMzczNzA4YzQ0Y2EiLCJpYXQiOjE2NDkyNzQ5NzcsImV4cCI6MTY0OTMxODE3N30.Xrq_hUeAKQJSm9fALXLbNDkLiWugAvFvLCzihyZldSs
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUxNWE1MjBlZjVmYWY5ZDAzMWYiLCJpYXQiOjE2NTAwMjk4NTYsImV4cCI6MTY1MTMyNTg1Nn0.bsIRU34_toPYOwB2cvsg8-G9bAieQAC6x9Hq1-q2VYA
 
-
+###
+PATCH http://localhost:8080/api/users/sendFriendRequest/6259753aa520ef5faf9d0322
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUxNWE1MjBlZjVmYWY5ZDAzMWYiLCJpYXQiOjE2NTAxMzA2NzUsImV4cCI6MTY1MTQyNjY3NX0.4SAVtDBiGQRoS5Y31AanOhaJg90aCYaseZw8XSaOu3o
+###
+PATCH http://localhost:8080/api/users/acceptFriendRequest/62597515a520ef5faf9d031f
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUzYWE1MjBlZjVmYWY5ZDAzMjIiLCJpYXQiOjE2NTAxMzA3MzUsImV4cCI6MTY1MTQyNjczNX0.jLsveP28Y4V-njcJVa8lz9x57GD0E9PTTu1_XNjzJEI
+###
+PATCH http://localhost:8080/api/users/removeFriend/6259753aa520ef5faf9d0322
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUxNWE1MjBlZjVmYWY5ZDAzMWYiLCJpYXQiOjE2NTAwMjk4NTYsImV4cCI6MTY1MTMyNTg1Nn0.bsIRU34_toPYOwB2cvsg8-G9bAieQAC6x9Hq1-q2VYA

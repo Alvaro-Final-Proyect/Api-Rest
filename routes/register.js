@@ -14,6 +14,7 @@ const register = async (request, response) => {
         surname: request.body.surname,
         gender: request.body.gender,
         level: request.body.level,
+        position: request.body.position,
         friends: [],
         friendsRequests: []
     });

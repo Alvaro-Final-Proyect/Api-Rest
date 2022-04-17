@@ -45,6 +45,14 @@ const userSchema = new mongoose.Schema({
         type: Number,
         required: 'Level is required'
     },
+    position: {
+        type: String,
+        enum: {
+            values: ['right', 'backhand', 'indifferent'],
+            message: '{VALUE} is not supported'
+        },
+        required: 'Position is required'
+    },
     friends: [
         {
             type: ObjectId,
