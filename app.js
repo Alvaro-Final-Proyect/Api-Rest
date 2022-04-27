@@ -11,6 +11,7 @@ const login = require('./routes/login');
 const register = require('./routes/register');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./components/users');
+const matchesRouter = require('./components/matches');
 
 app.use(logger);
 app.use('/', indexRouter);
@@ -20,5 +21,6 @@ app.use('/register', register);
 app.use(auth);
 
 app.use('/api/users', usersRouter);
+app.use('/api/matches', matchesRouter)
 
 module.exports = app;

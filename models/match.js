@@ -1,0 +1,35 @@
+const mongoose = require('mongoose');
+const ObjectId = mongoose.Schema.Types.ObjectId;
+
+const options = { toJson: { virtuals: true} };
+
+const matchSchema = new mongoose.Schema({
+    _id: { 
+        type: ObjectId
+    },
+    players: {
+        type: [
+            { type: ObjectId, ref: 'User' }
+        ],
+        validate: [playersLimeit, '{PATH} the number of players must be 4']
+    },
+    minLevel: {
+        type: Number,
+        required: 'Min level is required'
+    },
+    date: {
+        type: Date,
+        required: 'Date is required',
+        validate: [dateCheck, '{PATH} must be on the future']
+    }
+}, options);
+
+function playersLimeit(players) {
+    return players.length === 4;
+}
+
+function dateCheck(date) { 
+    return date >= Date.now()
+}
+
+module.exports = mongoose.model('Match', matchSchema);
