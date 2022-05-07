@@ -17,6 +17,10 @@ const matchSchema = new mongoose.Schema({
         type: Number,
         required: 'Min level is required'
     },
+    maxLevel: {
+        type: Number,
+        required: 'Max level is required'
+    },
     date: {
         type: Date,
         required: 'Date is required',
@@ -29,7 +33,7 @@ function playersLimeit(players) {
 }
 
 function dateCheck(date) { 
-    return date >= Date.now()
+    return date.getTime() >= Date.now();
 }
 
 module.exports = mongoose.model('Match', matchSchema);

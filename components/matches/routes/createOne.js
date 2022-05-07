@@ -6,6 +6,7 @@ const createOne = async (request, response) => {
         _id: new ObjectId(),
         players: request.body.players,
         minLevel: request.body.minLevel,
+        maxLevel: request.body.maxLevel,
         date: new Date(request.body.date)
     });
 
