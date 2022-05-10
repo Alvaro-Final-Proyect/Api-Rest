@@ -10,7 +10,7 @@ authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUxNWE1MjBl
     "players": [null, null, null, null],
     "minLevel": 3.9,
     "maxLevel": 5.9,
-    "date": "Tue, 07 May 2022 15:00:00 GMT"
+    "date": "Tue, 11 May 2022 18:00:00 GMT"
 }
 
 ###

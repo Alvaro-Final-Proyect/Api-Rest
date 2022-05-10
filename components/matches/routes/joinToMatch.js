@@ -1,4 +1,5 @@
 const Match = require('../../../models/match');
+const populater = require('../settings/populater');
 
 const joinToMatch = async (request, response) => {
     const userId = request.userId; 
@@ -29,7 +30,7 @@ const joinToMatch = async (request, response) => {
     match.players[index] = userId;
     match.save();
 
-    response.json(match);
+    response.json(match.populate(populater));
 }
 
 module.exports = joinToMatch;
