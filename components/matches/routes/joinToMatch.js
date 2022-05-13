@@ -19,6 +19,7 @@ const joinToMatch = async (request, response) => {
         return response.status(405).json({ message: 'Index out of range'});
     }
 
+    console.log(match.players);
     if(match.players[index]){
         return response.status(407).json({ message:'Position already occupied' });
     }
@@ -29,8 +30,7 @@ const joinToMatch = async (request, response) => {
 
     match.players[index] = userId;
     match.save();
-
-    response.json(match.populate(populater));
+    response.json(await match.populate(populater));
 }
 
 module.exports = joinToMatch;

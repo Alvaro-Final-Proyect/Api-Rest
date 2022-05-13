@@ -1,4 +1,4 @@
-GET http://localhost:8080/api/matches/
+GET http://localhost:8080/api/matches/627ec1f4455cd6f71df9597e
 authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUxNWE1MjBlZjVmYWY5ZDAzMWYiLCJpYXQiOjE2NTE0MTc4MDMsImV4cCI6MTY1MjcxMzgwM30.FWKo4PkKS5f7UQELopMa2_Du80tiVrwMgAxWDlNK_u0
 ###
 
@@ -10,9 +10,14 @@ authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUxNWE1MjBl
     "players": [null, null, null, null],
     "minLevel": 3.9,
     "maxLevel": 5.9,
-    "date": "Tue, 11 May 2022 18:00:00 GMT"
+    "date": "Tue, 14 May 2022 21:00:00 GMT"
 }
 
 ###
-PATCH http://localhost:8080/api/matches/joinToMatch/62698f265860e146ffea1fa6&2
-authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUxNWE1MjBlZjVmYWY5ZDAzMWYiLCJpYXQiOjE2NTE0MTc4MDMsImV4cCI6MTY1MjcxMzgwM30.FWKo4PkKS5f7UQELopMa2_Du80tiVrwMgAxWDlNK_u0
+PATCH http://localhost:8080/api/matches/joinToMatch/627ec1f4455cd6f71df9597e&2
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxNjQ3NTNhOTUyMWUwMjUwYjEwZDIiLCJpYXQiOjE2NTI0NzQyNDksImV4cCI6MTY1Mzc3MDI0OX0.eRfBNIKQLvidxLTfATsyLgxtnkQgl6-hDgdD3a8WOW4
+
+###
+PATCH http://localhost:8080/api/matches/leaveMatch/627ec1f4455cd6f71df9597e
+Content-Type: application/json
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxNjQ3NTNhOTUyMWUwMjUwYjEwZDIiLCJpYXQiOjE2NTI0NzQyNDksImV4cCI6MTY1Mzc3MDI0OX0.eRfBNIKQLvidxLTfATsyLgxtnkQgl6-hDgdD3a8WOW4

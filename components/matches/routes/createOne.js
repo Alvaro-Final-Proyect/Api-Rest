@@ -1,4 +1,5 @@
 const Match = require('../../../models/match');
+const populater = require('../settings/populater');
 const ObjectId = require('mongoose').Types.ObjectId;
 
 const createOne = async (request, response) => {
@@ -12,7 +13,7 @@ const createOne = async (request, response) => {
 
     try{
         await match.save();
-        response.status(201).json(match);
+        response.status(201).json(await match.populate(populater));
     }catch(error) {
         console.error(error.message);
         response.status(400).json({message: error.message});
