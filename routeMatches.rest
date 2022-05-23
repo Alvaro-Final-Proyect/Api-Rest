@@ -1,5 +1,5 @@
-GET http://localhost:8080/api/matches/627ec1f4455cd6f71df9597e
-authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUxNWE1MjBlZjVmYWY5ZDAzMWYiLCJpYXQiOjE2NTE0MTc4MDMsImV4cCI6MTY1MjcxMzgwM30.FWKo4PkKS5f7UQELopMa2_Du80tiVrwMgAxWDlNK_u0
+GET http://localhost:8080/api/matches/
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhhMWU1MjEzMDVmNGI2ZGYxZjdlMDQiLCJpYXQiOjE2NTMyMjA2NzcsImV4cCI6MTY1NDUxNjY3N30.x7LoUgr8Q0hnJWhkPEdpwirIAKwydwKtUadCWjac6dQ
 ###
 
 POST http://localhost:8080/api/matches/
@@ -10,7 +10,7 @@ authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjU5NzUxNWE1MjBl
     "players": [null, null, null, null],
     "minLevel": 3.9,
     "maxLevel": 5.9,
-    "date": "Tue, 14 May 2022 21:00:00 GMT"
+    "date": "Tue, 16 May 2022 21:00:00 GMT"
 }
 
 ###

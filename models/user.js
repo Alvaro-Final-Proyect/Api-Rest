@@ -64,6 +64,12 @@ const userSchema = new mongoose.Schema({
             type: ObjectId,
             ref: 'User'
         }
+    ],
+    matchesInvitations: [
+        { 
+            type: ObjectId,
+            ref: 'Match'
+        }
     ]
 }, options);
 
