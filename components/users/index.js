@@ -15,7 +15,11 @@ const acceptFriendRequest = require('./routes/acceptFriendRequest');
 const removeFriend = require('./routes/removeFriend');
 const getAllFriends = require('./routes/getAllFriends');
 const sendMatchInvitation = require('./routes/sendMatchInvitation');
+const getInvitedMatches = require('./routes/getInvitedMatches');
+const getUserMatches = require('./routes/getUserMatches');
 
+router.get('/getUserMatches', getUserMatches);
+router.get('/getInvitedMatches', getInvitedMatches);
 router.get('/getAllFriends', getAllFriends);
 router.get('/getUserFromToken', getUserFromToken);
 router.get('/:id', getUser, getOne);

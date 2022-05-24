@@ -7,9 +7,14 @@ Content-Type: application/json
 authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxNjQ3NTNhOTUyMWUwMjUwYjEwZDIiLCJpYXQiOjE2NTMyMDc2NzksImV4cCI6MTY1NDUwMzY3OX0.25IiAO8YeUOR80o0j_I6hskdsdNr0s4ou_tSf5JBrhA
 ###
 
-GET http://localhost:8080/api/users/getMatchesInvitations
+GET http://localhost:8080/api/users/getInvitedMatches
 Content-Type: application/json
-authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhhMWU3ZjEzMDVmNGI2ZGYxZjdlMDkiLCJpYXQiOjE2NTMzMjY1ODUsImV4cCI6MTY1NDYyMjU4NX0.k7KVd7ghO9uvZKOSTcA_4gqgxU8S8gADaKgEg-z8twE
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhhMWU3ZjEzMDVmNGI2ZGYxZjdlMDkiLCJpYXQiOjE2NTMzMzM0NjksImV4cCI6MTY1NDYyOTQ2OX0.nKy-HaQkm4TZSIqWyEe93r1oVEKTFumn6GjxuZpIeMk
+###
+
+GET http://localhost:8080/api/users/getUserMatches
+Content-Type: application/json
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhhMWU1MjEzMDVmNGI2ZGYxZjdlMDQiLCJpYXQiOjE2NTM0MTEzNTgsImV4cCI6MTY1NDcwNzM1OH0.lnJzi3u39YeAndJ5fSuUKy38Ye48QNgLKFsyDXmjbvg
 ###
 
 POST http://localhost:8080/api/users
