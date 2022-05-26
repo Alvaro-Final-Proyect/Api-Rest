@@ -70,7 +70,11 @@ const userSchema = new mongoose.Schema({
             type: ObjectId,
             ref: 'Match'
         }
-    ]
+    ],
+    image: {
+        type: String,
+        default: ''
+    }
 }, options);
 
 module.exports = mongoose.model('User', userSchema);

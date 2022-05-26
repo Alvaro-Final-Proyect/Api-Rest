@@ -16,7 +16,8 @@ const register = async (request, response) => {
         level: request.body.level,
         position: request.body.position,
         friends: [],
-        friendsRequests: []
+        friendsRequests: [],
+        image: request.body.image,
     });
 
     try{

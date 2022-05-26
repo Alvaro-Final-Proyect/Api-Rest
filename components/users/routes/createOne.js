@@ -16,7 +16,7 @@ const createOne = async (request, response) => {
         level: request.body.level,
         position: request.body.position,
         friends: request.body.friends,
-        friendsRequests: request.body.friendsRequests
+        friendsRequests: request.body.friendsRequests,
     });
 
     try{
