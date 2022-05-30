@@ -25,7 +25,13 @@ const matchSchema = new mongoose.Schema({
         type: Date,
         required: 'Date is required',
         validate: [dateCheck, '{PATH} must be on the future']
-    }
+    },
+    result: [
+        [{ type: Number }],
+        [{ type: Number }],
+        [{ type: Number }],
+    ],
+    winner: { type: Number }
 }, options);
 
 function playersLimeit(players) {

@@ -1,9 +1,6 @@
 const bcrypt = require('bcrypt');
 
 const updateOne = async (request, response) => {  
-
-    console.log(request.body.image);
-
     if(request.body.username) response.user.username = request.body.username;
     if(request.body.email) response.user.email = request.body.email;
     if(request.body.name) response.user.name = request.body.name;

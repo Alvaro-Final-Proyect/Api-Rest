@@ -4,6 +4,7 @@ const router = require('express').Router();
 const getMatch = require('./middlewares/getMatch');
 
 // routes
+const setMatchResult = require('./routes/setMatchResult');
 const createOne = require('./routes/createOne');
 // const deleteOne = require('./routes/deleteOne');
 const getOne = require('./routes/getOne');
@@ -12,6 +13,7 @@ const getAllMatches = require('./routes/getAllMatches');
 const joinToMatch = require('./routes/joinToMatch');
 const leaveMatch = require('./routes/leaveMatch');
 
+router.patch('/setMatchResult/:id&:winner', setMatchResult);
 router.post('/', createOne);
 // router.delete('/:id', getUser, deleteOne);
 router.get('/:id', getMatch, getOne);

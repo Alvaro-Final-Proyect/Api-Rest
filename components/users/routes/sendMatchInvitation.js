@@ -4,7 +4,7 @@ const Match = require('../../../models/match');
 const sendMatchInvitation = async (request, response) => {
     const matchId = request.params.matchId
     const userInvitedId = request.params.userInvitedId;
-    const match = await Match.findById(matchId);
+    const match = await Match.findById(matchId)
     const userInvited = await User.findById(userInvitedId);
 
     if(!match) {
@@ -22,8 +22,6 @@ const sendMatchInvitation = async (request, response) => {
         return response.status(400).json({ error:`User already in match` });
     }
 
-    console.log(userInvited.matchesInvitations);
-
     if(userInvited.matchesInvitations.includes(matchId)) {
         console.log(`User already invited to match`);
         return response.status(400).json({ error:`User already invited to match` });
@@ -31,6 +29,7 @@ const sendMatchInvitation = async (request, response) => {
 
     userInvited.matchesInvitations.push(matchId);    
     await userInvited.save();
+    console.log("ok");
     response.json({message:"User invited"});
 }
 

@@ -1,4 +1,4 @@
-GET http://localhost:8080/api/matches/
+GET http://localhost:8080/api/matches/6290e627b118cddf1990bd09
 authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhhMWU1MjEzMDVmNGI2ZGYxZjdlMDQiLCJpYXQiOjE2NTMyMjA2NzcsImV4cCI6MTY1NDUxNjY3N30.x7LoUgr8Q0hnJWhkPEdpwirIAKwydwKtUadCWjac6dQ
 ###
 
@@ -21,3 +21,12 @@ authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxNjQ3NTNhOTUy
 PATCH http://localhost:8080/api/matches/leaveMatch/627ec1f4455cd6f71df9597e
 Content-Type: application/json
 authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxNjQ3NTNhOTUyMWUwMjUwYjEwZDIiLCJpYXQiOjE2NTI0NzQyNDksImV4cCI6MTY1Mzc3MDI0OX0.eRfBNIKQLvidxLTfATsyLgxtnkQgl6-hDgdD3a8WOW4
+
+###
+PATCH http://localhost:8080/api/matches/setMatchResult/6290e627b118cddf1990bd09&0
+Content-Type: application/json
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxNjQ3NTNhOTUyMWUwMjUwYjEwZDIiLCJpYXQiOjE2NTI0NzQyNDksImV4cCI6MTY1Mzc3MDI0OX0.eRfBNIKQLvidxLTfATsyLgxtnkQgl6-hDgdD3a8WOW4
+
+{
+    "result": [[6,5], [7,6], [0, 0]]
+}
