@@ -1,0 +1,21 @@
+POST http://localhost:8080/api/companySettigns
+Content-Type: application/json
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhmY2EwYWM3ODk1YTdlZmZiYjBkNTQiLCJpYXQiOjE2NTQxMDA5MzIsImV4cCI6MTY1NTM5NjkzMn0.zhXEwpJn8y4sms4c0U0J3zdvqMzsscfPCAPqLl8YqwQ
+
+{
+    "matchPrice": 4.50
+}
+
+###
+PATCH http://localhost:8080/api/companySettigns/
+Content-Type: application/json
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhmY2EwYWM3ODk1YTdlZmZiYjBkNTQiLCJpYXQiOjE2NTQxMDA5MzIsImV4cCI6MTY1NTM5NjkzMn0.zhXEwpJn8y4sms4c0U0J3zdvqMzsscfPCAPqLl8YqwQ
+
+{
+    "matchPrice": 6.50
+}
+
+###
+GET http://localhost:8080/api/companySettigns/
+Content-Type: application/json
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhmY2EwYWM3ODk1YTdlZmZiYjBkNTQiLCJpYXQiOjE2NTQxMDA5MzIsImV4cCI6MTY1NTM5NjkzMn0.zhXEwpJn8y4sms4c0U0J3zdvqMzsscfPCAPqLl8YqwQ

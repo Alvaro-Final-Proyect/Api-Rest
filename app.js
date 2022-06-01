@@ -13,6 +13,7 @@ const register = require('./routes/register');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./components/users');
 const matchesRouter = require('./components/matches');
+const companySettingsRouter = require('./components/company');
 
 app.use(logger);
 app.use('/', indexRouter);
@@ -22,6 +23,7 @@ app.use('/register', register);
 app.use(auth);
 
 app.use('/api/users', usersRouter);
-app.use('/api/matches', matchesRouter)
+app.use('/api/matches', matchesRouter);
+app.use('/api/companySettigns', companySettingsRouter);
 
 module.exports = app;

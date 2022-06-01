@@ -17,6 +17,7 @@ const createOne = async (request, response) => {
         position: request.body.position,
         friends: request.body.friends,
         friendsRequests: request.body.friendsRequests,
+        isAdmin: request.body.isAdmin ? true : false, 
     });
 
     try{

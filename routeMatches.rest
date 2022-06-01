@@ -30,3 +30,7 @@ authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxNjQ3NTNhOTUy
 {
     "result": [[6,5], [7,6], [0, 0]]
 }
+
+###
+GET http://localhost:8080/api/matches/getLastWeekMatches
+authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhmY2EwYWM3ODk1YTdlZmZiYjBkNTQiLCJpYXQiOjE2NTQxMDA5MzIsImV4cCI6MTY1NTM5NjkzMn0.zhXEwpJn8y4sms4c0U0J3zdvqMzsscfPCAPqLl8YqwQ
