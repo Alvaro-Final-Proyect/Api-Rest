@@ -39,7 +39,8 @@ const userSchema = new mongoose.Schema({
             values: ['male', 'female'],
             message: '{VALUE} is not supported'
         },
-        required: 'Gender is required'
+        required: 'Gender is required',
+        default: 'male'
     },
     level: {
         type: Number,
@@ -51,7 +52,8 @@ const userSchema = new mongoose.Schema({
             values: ['right', 'backhand', 'indifferent'],
             message: '{VALUE} is not supported'
         },
-        required: 'Position is required'
+        required: 'Position is required',
+        default: 'indifferent'
     },
     friends: [
         {
@@ -73,7 +75,6 @@ const userSchema = new mongoose.Schema({
     ],
     image: {
         type: String,
-        default: ''
     },
     isAdmin: {
         type: Boolean,

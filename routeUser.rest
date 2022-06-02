@@ -2,6 +2,9 @@ GET http://localhost:8080/api/users/
 authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxNjQ3NTNhOTUyMWUwMjUwYjEwZDIiLCJpYXQiOjE2NTMyMDc2NzksImV4cCI6MTY1NDUwMzY3OX0.25IiAO8YeUOR80o0j_I6hskdsdNr0s4ou_tSf5JBrhA
 ###
 
+GET http://localhost:8080/getAllUsernamesAndEmails
+###
+
 GET http://localhost:8080/api/users/getAllFriends
 Content-Type: application/json
 authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjcxNjQ3NTNhOTUyMWUwMjUwYjEwZDIiLCJpYXQiOjE2NTMyMDc2NzksImV4cCI6MTY1NDUwMzY3OX0.25IiAO8YeUOR80o0j_I6hskdsdNr0s4ou_tSf5JBrhA

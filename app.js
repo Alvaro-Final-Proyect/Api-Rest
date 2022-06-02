@@ -10,6 +10,7 @@ const logger = require('./routes/logger');
 const auth = require('./middlewares/auth');
 const login = require('./routes/login');
 const register = require('./routes/register');
+const getAllUsernamesAndEmails = require('./routes/getAllUsernamesAndEmails');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./components/users');
 const matchesRouter = require('./components/matches');
@@ -19,6 +20,7 @@ app.use(logger);
 app.use('/', indexRouter);
 app.use('/login', login);
 app.use('/register', register);
+app.use('/getAllUsernamesAndEmails', getAllUsernamesAndEmails);
 
 app.use(auth);
 
