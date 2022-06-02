@@ -4,7 +4,6 @@ const getCompanySettings = async (request, response, next) => {
     let companySettings;
     try{
         companySettings = await CompanySettings.findOne();
-        console.log(companySettings);
 
         if(!companySettings){
             return response.status(404).json({ message: 'Cannot find company.' });

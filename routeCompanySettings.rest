@@ -1,4 +1,4 @@
-POST http://localhost:8080/api/companySettigns
+POST http://localhost:8080/api/companySettings
 Content-Type: application/json
 authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhmY2EwYWM3ODk1YTdlZmZiYjBkNTQiLCJpYXQiOjE2NTQxMDA5MzIsImV4cCI6MTY1NTM5NjkzMn0.zhXEwpJn8y4sms4c0U0J3zdvqMzsscfPCAPqLl8YqwQ
 
@@ -7,7 +7,7 @@ authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhmY2EwYWM3ODk1
 }
 
 ###
-PATCH http://localhost:8080/api/companySettigns/
+PATCH http://localhost:8080/api/companySettings/
 Content-Type: application/json
 authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhmY2EwYWM3ODk1YTdlZmZiYjBkNTQiLCJpYXQiOjE2NTQxMDA5MzIsImV4cCI6MTY1NTM5NjkzMn0.zhXEwpJn8y4sms4c0U0J3zdvqMzsscfPCAPqLl8YqwQ
 
@@ -16,6 +16,6 @@ authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhmY2EwYWM3ODk1
 }
 
 ###
-GET http://localhost:8080/api/companySettigns/
+GET http://localhost:8080/api/companySettings/
 Content-Type: application/json
 authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjhmY2EwYWM3ODk1YTdlZmZiYjBkNTQiLCJpYXQiOjE2NTQxMDA5MzIsImV4cCI6MTY1NTM5NjkzMn0.zhXEwpJn8y4sms4c0U0J3zdvqMzsscfPCAPqLl8YqwQ

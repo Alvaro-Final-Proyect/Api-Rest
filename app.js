@@ -24,6 +24,6 @@ app.use(auth);
 
 app.use('/api/users', usersRouter);
 app.use('/api/matches', matchesRouter);
-app.use('/api/companySettigns', companySettingsRouter);
+app.use('/api/companySettings', companySettingsRouter);
 
 module.exports = app;
