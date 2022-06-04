@@ -11,6 +11,6 @@ const createOne = require('./routes/createOne');
 router.get('/:id', getTournament, getOne);
 router.get('/', getAllTournaments);
 
-router.post('/:startDate', createOne);
+router.post('/', createOne);
 
 module.exports = router;
