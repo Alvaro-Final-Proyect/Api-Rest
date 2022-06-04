@@ -5,7 +5,8 @@ const getAllMatches = async (request, response) => {
     let matches;
     try{
         matches = await Match.find({
-            date: { $gt: Date.now(), }
+            date: { $gt: Date.now(), },
+            isTournament: false
         }).populate(populater);
         if(!matches){
             return response.status(404).json({ message: 'Matches were not found' });

@@ -2,7 +2,7 @@ const Match = require('../../../models/match');
 
 const getUserMatches = async (request, response) => {
     const userId = request.userId;
-    let matches = await Match.find({players: userId, date: {$lt: Date.now()} }).populate({
+    let matches = await Match.find({players: userId, date: {$lt: Date.now()}, isTournament: false }).populate({
         path: "players",
         model: "User",
         retainNullValues: true 

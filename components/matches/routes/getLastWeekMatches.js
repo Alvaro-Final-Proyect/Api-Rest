@@ -10,7 +10,8 @@ const getLastWeekMatches = async (request, response) => {
 
         matches = await Match.find({
             date: { $lt: currentDate.getTime(), $gt: weekAgo.getTime() }, 
-            players: { $not: { $in: null } }
+            players: { $not: { $in: null } },
+            isTournament: false
         }).populate({
             path: "players",
             model: "User",   

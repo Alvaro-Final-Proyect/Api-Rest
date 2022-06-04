@@ -31,7 +31,8 @@ const matchSchema = new mongoose.Schema({
         [{ type: Number }],
         [{ type: Number }],
     ],
-    winner: { type: Number }
+    winner: { type: Number },
+    isTournament: { type: Boolean, default: false },
 }, options);
 
 function playersLimeit(players) {

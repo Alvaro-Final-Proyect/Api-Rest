@@ -9,7 +9,8 @@ const createOne = async (request, response) => {
         players: request.body.players,
         minLevel: request.body.minLevel,
         maxLevel: request.body.maxLevel,
-        date: new Date(request.body.date)
+        date: new Date(request.body.date),
+        isTournament: request.body.isTournament ? true : false
     });
 
     try{

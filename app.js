@@ -15,6 +15,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./components/users');
 const matchesRouter = require('./components/matches');
 const companySettingsRouter = require('./components/company');
+const tournamentsRouter = require('./components/tournaments');
 
 app.use(logger);
 app.use('/', indexRouter);
@@ -27,5 +28,6 @@ app.use(auth);
 app.use('/api/users', usersRouter);
 app.use('/api/matches', matchesRouter);
 app.use('/api/companySettings', companySettingsRouter);
+app.use('/api/tournaments', tournamentsRouter);
 
 module.exports = app;
