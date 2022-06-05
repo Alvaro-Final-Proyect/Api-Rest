@@ -11,6 +11,7 @@ const getOne = require('./routes/getOne');
 // const updateOne = require('./routes/updateOne');
 const getAllMatches = require('./routes/getAllMatches');
 const joinToMatch = require('./routes/joinToMatch');
+const joinToMatchWithId = require('./routes/joinToMatchWithId');
 const leaveMatch = require('./routes/leaveMatch');
 const getLastWeekMatches = require('./routes/getLastWeekMatches');
 
@@ -22,6 +23,7 @@ router.get('/:id', getMatch, getOne);
 // router.patch('/:id', getUser, updateOne);
 router.get('/', getAllMatches);
 router.patch('/joinToMatch/:id&:index', joinToMatch);
+router.patch('/joinToMatchWithId/:id&:index&:userId', joinToMatchWithId);
 router.patch('/leaveMatch/:id', leaveMatch);
 
 module.exports = router;

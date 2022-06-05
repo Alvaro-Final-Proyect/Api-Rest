@@ -3,14 +3,13 @@ const bcrypt = require('bcrypt');
 const services = require('../services');
 
 const login = (request, response) => {
-    const username = request.body.username;
-    const email = request.body.email;
+    const usernameOrEmail = request.body.username;
 
     User.findOne(
         { 
             $or: [
-                { 'username': { $regex : new RegExp(username, "i") } },
-                { 'email': { $regex : new RegExp(email, "i") } }
+                { 'username': { $regex : new RegExp(usernameOrEmail, "i") } },
+                { 'email': { $regex : new RegExp(usernameOrEmail, "i") } }
             ]
         },
         async (error, user) => {
