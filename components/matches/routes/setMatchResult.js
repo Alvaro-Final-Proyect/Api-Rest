@@ -1,4 +1,5 @@
 const Match = require('../../../models/match');
+const User = require('../../../models/user');
 const populater = require('../settings/populater');
 
 const setMatchResult = async (request, response) => {
@@ -18,6 +19,18 @@ const setMatchResult = async (request, response) => {
 
     match.result = result;
     match.winner = winner;
+
+    const winners = match.players.slice(winner == 0 ? 0 : 2, winner == 0 ? 2 : 4);
+
+    try{
+        winners.forEach(async (playerId) => {
+            const player = await User.findById(playerId);
+            player.level += 0.1;
+            await player.save();
+        });
+    }catch(e){
+        console.log(e);
+    }
 
     await match.save();
     response.json({mesage: 'Match saved'});

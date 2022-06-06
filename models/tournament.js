@@ -6,7 +6,6 @@ const options = { toJson: { virtuals: true} };
 const validateRoundOfSixteen = (matches) => matches.length === 8 && !matches.some((match) => match == null); 
 const validateQuarterFinals = (matches) => matches.length === 4;
 const validateSemifinals = (matches) => matches.length === 2; 
-const validateWinners = (players) => players.length === 2;
 
 const tournamentSchecma = new mongoose.Schema({
     _id: { 
