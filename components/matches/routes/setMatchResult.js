@@ -21,6 +21,7 @@ const setMatchResult = async (request, response) => {
     match.winner = winner;
 
     const winners = match.players.slice(winner == 0 ? 0 : 2, winner == 0 ? 2 : 4);
+    const losers = match.players.slice(winner == 0 ? 2 : 0, winner == 0 ? 4 : 2)
 
     try{
         winners.forEach(async (playerId) => {
@@ -28,6 +29,12 @@ const setMatchResult = async (request, response) => {
             player.level += 0.1;
             await player.save();
         });
+        losers.forEach(async (playerId) => {
+            const player = await User.findById(playerId);
+            player.level -= 0.1;
+            await player.save();
+        });
+
     }catch(e){
         console.log(e);
     }
