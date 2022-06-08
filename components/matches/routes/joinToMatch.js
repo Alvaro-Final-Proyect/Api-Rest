@@ -7,7 +7,7 @@ const joinToMatch = async (request, response) => {
 
     let match;
     try{
-        match = await Match.findById(request.params.id);
+        match = await Match.findById(request.params.id, '-date');
         if(!match){
             return response.status(404).json({ message: 'Cannot find match.' });
         }
@@ -28,8 +28,8 @@ const joinToMatch = async (request, response) => {
     }
 
     match.players[index] = userId;
-    match.save();
-    response.json(await match.populate(populater));
+    await match.save();
+    response.json(await Match.findById(request.params.id).populate(populater));
 }
 
 module.exports = joinToMatch;
