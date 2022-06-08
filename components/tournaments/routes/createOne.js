@@ -45,7 +45,7 @@ const createOne = async (request, response) => {
         quarterFinal.push(id);
     }
 
-    date.setDate(startDate.getDate() + 1);
+    date.setDate(date.getDate() + 1);
 
     const semifinals = [];
     for(let i = 0; i < 2; i++){
@@ -53,7 +53,7 @@ const createOne = async (request, response) => {
         semifinals.push(id);
     }
 
-    date.setDate(startDate.getDate() + 1);
+    date.setDate(date.getDate() + 1);
 
     const final = await createMatch(date, minLevel, maxLevel);
 
